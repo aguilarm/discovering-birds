@@ -1,0 +1,7 @@
+node_modules
+**/*.min.js
+.next
+public
+next.config.js
+.eslintrc.js
+.prettierrc.js

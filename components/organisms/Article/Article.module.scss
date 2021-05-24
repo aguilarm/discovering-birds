@@ -1,0 +1,46 @@
+@import 'lib/sass/variables';
+
+.container {
+  max-width: 1024px;
+  margin: 0 1rem;
+  @media(min-width: 768px) {
+    margin: 0 auto;
+  }
+}
+
+.header {
+  margin: 2.75rem 0 3rem;
+  text-align: center;
+}
+
+.title {
+  line-height: 1.2;
+  margin: 0;
+}
+
+.subTitle {
+  line-height: 1.4;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: $font-display;
+  letter-spacing: 0.05rem;
+  margin: 1rem 0;
+  display: inline-block;
+}
+
+.main {
+  max-width: 720px;
+  margin: 0 1rem;
+  @media(min-width: 768px) {
+    margin: 0 auto;
+    max-width: 720px;
+  }
+}
+
+.main {
+  h1, h2, h3, h4, h5 {
+    margin: 3rem 0 1.38rem;
+    line-height: 1.3;
+  }
+}
+

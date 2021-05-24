@@ -1,0 +1,10 @@
+.hero {
+  height: 180px;
+  width: auto;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 4px solid #c79b8a;
+  @media (min-width: 1024px) {
+    height: 300px;
+  }
+}
