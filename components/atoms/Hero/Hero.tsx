@@ -42,7 +42,7 @@ const Hero: React.FC<Props> = ({ imageIndex = 0 }) => {
       <Image
         className={styles.image}
         priority={true}
-        src={`/hero-images/${IMAGES[imageIndex].name}`}
+        src={`/assets/hero-images/${IMAGES[imageIndex].name}`}
         alt={IMAGES[imageIndex].alt}
         layout={'fill'}
         objectFit={'cover'}

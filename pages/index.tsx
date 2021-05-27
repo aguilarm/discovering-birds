@@ -1,6 +1,6 @@
 import Home, { HomeProps } from 'components/pages/Home/Home';
 import { GetStaticProps } from 'next';
-import { getMostRecentArticles } from 'lib/server/content';
+import { getMostRecentArticles } from 'lib/server/content/content';
 import React from 'react';
 
 export const getStaticProps: GetStaticProps<HomeProps> = () => {

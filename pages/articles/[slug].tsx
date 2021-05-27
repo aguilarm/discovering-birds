@@ -3,7 +3,7 @@ import path from 'path';
 import ArticlePage, {
   ArticlePageProps,
 } from 'components/pages/ArticlePage/ArticlePage';
-import { allArticleSlugs, getArticleBySlug } from 'lib/server/content';
+import { allArticleSlugs, getArticleBySlug } from 'lib/server/content/content';
 
 export const getStaticPaths: GetStaticPaths = () => {
   return {
