@@ -12,7 +12,7 @@ export interface ArticlePageProps {
 const ArticlePage: React.FC<ArticlePageProps> = (props) => (
   <main>
     <Header />
-    <Hero imageIndex={4} />
+    <Hero src={props.metaData.heroImageSrc} alt={props.metaData.heroImageAlt} />
     <Article {...props} />
   </main>
 );

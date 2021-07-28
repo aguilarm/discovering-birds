@@ -30,9 +30,9 @@
 
 .main {
   max-width: 720px;
-  margin: 0 1rem;
+  margin: 0 1rem 3rem;
   @media(min-width: 768px) {
-    margin: 0 auto;
+    margin: 0 auto 5rem;
     max-width: 720px;
   }
 }

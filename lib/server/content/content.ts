@@ -21,23 +21,43 @@ export const allArticleMetadata = allArticleFilenames.map((filename) => {
   };
 });
 
-export function getArticleBySlug(slug: string) {
-  const fullPath = path.join(ArticlesDirPath, `${slug}.md`);
-  if (!fs.existsSync(fullPath)) {
+/**
+ * Just get html parsed from md in a particular file
+ * @param fileName
+ * @param subdirectory
+ */
+export function parseManagedMdFile(fileName: string, subdirectory?: string) {
+  // Filter out potentially undefined subdirectory
+  const pathSegments = [
+    process.cwd(),
+    'managed-content',
+    subdirectory,
+    `${fileName}.md`
+  ].filter(segment => segment);
+  const absolutePath = path.join(...pathSegments);
+  if (!fs.existsSync(absolutePath)) {
+    console.warn('File not found at ' + absolutePath + '! Returning null.');
     return null;
   }
 
-  const fileContents = fs.readFileSync(fullPath, 'utf8');
-  const { data: metaData, content: rawMarkdown } = matter(fileContents);
+  const fileContents = fs.readFileSync(absolutePath, 'utf8');
+  const { data: metaData, content: rawMarkdown} = matter(fileContents);
   const htmlBody = marked(rawMarkdown);
 
-  return { metaData, htmlBody };
+  return {
+    metaData,
+    htmlBody
+  }
+}
+
+export function getArticleBySlug(slug: string) {
+  return parseManagedMdFile(slug, 'articles');
 }
 
 export function getMostRecentArticles(count: number) {
   return allArticleMetadata
     .sort((a, b) => {
-      return b.date - a.date;
+      return new Date(a.date) - new Date(b.date);
     })
     .slice(0, count);
 }

@@ -1,17 +1,46 @@
 @import 'lib/sass/variables';
 
 .main {
-  max-width: 1024px;
-  margin: 2rem 1rem;
+  margin: 0 1rem;
   @media(min-width: 1024px) {
-    margin: 4rem auto;
+    margin: 0 auto;
+  }
+}
+
+.homeHero {
+  height: 85vh;
+  width: auto;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 4px solid $color-border;
+  h1 {
+    z-index: 2;
+    color: white;
+    font-size: 8vw;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    letter-spacing: 6px;
+    transform: translateY(-50%);
+    line-height: 1.1;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+    @media(min-width: 1280px) {
+      font-size: 8rem;
+    }
   }
 }
 
 .section {
   padding: 0.75rem 3rem 3.6rem;
-  border: 2px solid rgba(0,0,0,0.7);
-  margin: 3rem 0;
+  margin: 1rem auto;
+  max-width: 1024px;
+}
+
+.sectionIntro {
+  font-size: 1.777rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .header {
@@ -19,5 +48,34 @@
   h1 {
     margin: 0;
     line-height: 1;
+  }
+}
+
+.articleTeaserContainer {
+  border: 1px solid gray;
+  padding: 10px;
+  margin: 1.777rem 0;
+}
+
+.articleTeaser {
+  height: 260px;
+  width: auto;
+  position: relative;
+  border: 2px solid black;
+}
+
+.articleTeaserContents {
+  z-index: 10;
+  position: absolute;
+  color: white;
+  text-shadow: 1px 1px 16px rgba(0, 0, 0, 1);
+  bottom: 0;
+  padding: 1rem 1.45rem;
+  h1 {
+    font-size: 3.157rem;
+    margin: 0 0 0.2rem;
+  }
+  span {
+    font-size: 1.333rem;
   }
 }

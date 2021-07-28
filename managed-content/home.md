@@ -1,0 +1,1 @@
+Welcome to *Discovering Birds*. Join me on my journey to see and learn as much as possible about the seemingly endless wonder of birds. I hope to promote our avian friends in a way that is approachable for everyone. We'll explore conservation, birding, ornithology, and everything in between.

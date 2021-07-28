@@ -1,7 +1,9 @@
 ---
 title: "Fascinating North American Birds"
-subTitle: "North America is a filled with unique and interesting birds. Here are a few unexpected ones to get you started."
-date: "2021-05-24"
+subTitle: "Incredible birds may be closer to home than you think."
+date: "2021-08-24"
+heroImageSrc: "/assets/hero-images/kiskadee.jpg"
+heroImageAlt: "Great Kiskadee in south Texas"
 ---
 
 Whether you're planning a trip to North America or have lived there your entire life, the sheer number
