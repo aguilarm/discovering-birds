@@ -11,12 +11,18 @@ interface Props {
   position?: string;
 }
 
-const AgedPhoto: React.FC<Props> = ({ className, imageSrc, altText, priority, position }) => {
+const AgedPhoto: React.FC<Props> = ({
+  className,
+  imageSrc,
+  altText,
+  priority,
+  position,
+}) => {
   return (
     <div className={classNames(styles.container, className)}>
       <div className={styles.overlay}>
         <Image
-          priority={priority}
+          priority={!!priority}
           src={`/assets/util/paper.png`}
           alt={'Aged paper overlay'}
           layout={'fill'}
@@ -27,7 +33,7 @@ const AgedPhoto: React.FC<Props> = ({ className, imageSrc, altText, priority, po
       <div className={styles.image}>
         <Image
           className={styles.image}
-          priority={priority}
+          priority={!!priority}
           src={imageSrc}
           alt={altText}
           layout={'fill'}
@@ -35,7 +41,6 @@ const AgedPhoto: React.FC<Props> = ({ className, imageSrc, altText, priority, po
           objectPosition={position || 'center 55%'}
         />
       </div>
-
     </div>
   );
 };

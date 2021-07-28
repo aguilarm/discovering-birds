@@ -1,5 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
-import path from 'path';
+import React from 'react';
 import ArticlePage, {
   ArticlePageProps,
 } from 'components/pages/ArticlePage/ArticlePage';

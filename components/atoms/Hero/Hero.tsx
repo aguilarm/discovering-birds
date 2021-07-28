@@ -1,5 +1,5 @@
 import styles from './Hero.module.scss';
-import React, { useEffect, useMemo, useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 
 interface Props {

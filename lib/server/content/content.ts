@@ -2,6 +2,7 @@ import path from 'path';
 import fs from 'fs';
 import matter from 'gray-matter';
 import marked from 'marked';
+import { MetaData } from 'lib/types';
 
 const ArticlesDirPath = path.join(process.cwd(), 'managed-content/articles');
 
@@ -14,7 +15,8 @@ export const allArticleSlugs = allArticleFilenames.map((filename) =>
 export const allArticleMetadata = allArticleFilenames.map((filename) => {
   const fullPath = path.join(ArticlesDirPath, filename);
   const fileContents = fs.readFileSync(fullPath, 'utf-8');
-  const { data: metaData } = matter(fileContents);
+  const { data } = matter(fileContents);
+  const metaData = data as MetaData;
   return {
     ...metaData,
     path: '/articles/' + filename.replace('.md', ''),
@@ -32,22 +34,21 @@ export function parseManagedMdFile(fileName: string, subdirectory?: string) {
     process.cwd(),
     'managed-content',
     subdirectory,
-    `${fileName}.md`
-  ].filter(segment => segment);
+    `${fileName}.md`,
+  ].filter((segment) => segment);
   const absolutePath = path.join(...pathSegments);
   if (!fs.existsSync(absolutePath)) {
-    console.warn('File not found at ' + absolutePath + '! Returning null.');
-    return null;
+    throw new Error('File not found at ' + absolutePath);
   }
 
   const fileContents = fs.readFileSync(absolutePath, 'utf8');
-  const { data: metaData, content: rawMarkdown} = matter(fileContents);
+  const { data, content: rawMarkdown } = matter(fileContents);
   const htmlBody = marked(rawMarkdown);
-
+  const metaData = data as MetaData;
   return {
     metaData,
-    htmlBody
-  }
+    htmlBody,
+  };
 }
 
 export function getArticleBySlug(slug: string) {
@@ -57,6 +58,7 @@ export function getArticleBySlug(slug: string) {
 export function getMostRecentArticles(count: number) {
   return allArticleMetadata
     .sort((a, b) => {
+      // @ts-ignore
       return new Date(a.date) - new Date(b.date);
     })
     .slice(0, count);

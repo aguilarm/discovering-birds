@@ -3,7 +3,7 @@ import styles from './Article.module.scss';
 import { ArticlePageProps } from 'components/pages/ArticlePage/ArticlePage';
 
 const Article: React.FC<ArticlePageProps> = ({
-  metaData: { title, subTitle, date },
+  metaData: { title, subTitle },
   htmlBody,
 }) => {
   return (
