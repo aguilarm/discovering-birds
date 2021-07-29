@@ -15,14 +15,15 @@ const Home: React.FC<HomeProps> = ({ mostRecentArticles, homepageCopy }) => (
     <main className={styles.main}>
       <section className={styles.homeHero}>
         <AgedPhoto
-          position={'100% 50%'}
+          position={'center 42%'}
           priority={true}
           imageSrc={'/assets/hero-images/red-shouldered-hawk.jpg'}
           altText={'Red shouldered hawk'}
         />
-        <h1>
-          Discovering <br /> Birds
-        </h1>
+        <div className={styles.heroText}>
+          <div className={styles.discovering}>Discovering</div>
+          <div className={styles.birds}>Birds</div>
+        </div>
       </section>
       <section
         className={classnames(styles.sectionIntro, styles.section)}

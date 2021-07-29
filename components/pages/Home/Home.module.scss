@@ -14,21 +14,34 @@
   overflow: hidden;
   border-bottom: 4px solid $color-border;
   h1 {
-    z-index: 2;
-    color: white;
-    font-size: 8vw;
-    text-transform: uppercase;
-    position: relative;
-    text-align: center;
-    top: 50%;
-    letter-spacing: 6px;
-    transform: translateY(-50%);
-    line-height: 1.1;
-    text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
-    @media(min-width: 1280px) {
-      font-size: 8rem;
-    }
+
   }
+}
+
+.heroText {
+  z-index: 2;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.discovering {
+  color: white;
+  letter-spacing: -2px;
+  font-size: 7vw;
+  line-height: 0.8;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+}
+
+.birds {
+  letter-spacing: 17px;
+  font-size: 15vw;
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.1;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
 }
 
 .section {
