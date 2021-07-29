@@ -1,20 +1,17 @@
 @import 'lib/sass/variables';
 
 .main {
-  margin: 0 1rem;
-  @media(min-width: 1024px) {
-    margin: 0 auto;
-  }
+  margin: 0 auto;
 }
 
 .homeHero {
-  height: 85vh;
+  height: 520px;
   width: auto;
   position: relative;
   overflow: hidden;
   border-bottom: 4px solid $color-border;
-  h1 {
-
+  @media (min-width: 768px) {
+    height: 90vh;
   }
 }
 
@@ -23,42 +20,61 @@
   position: relative;
   text-align: center;
   top: 50%;
-  transform: translateY(-50%);
   color: white;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
   text-transform: uppercase;
+  transform: translateY(-90%);
+  @media (min-width: 768px) {
+    transform: translateY(-70%);
+  }
 }
 
 .heroSearching {
   color: white;
-  letter-spacing: -2px;
+  letter-spacing: 1px;
   line-height: 0.8;
-  font-size: 6vw;
+  font-size: 2.65rem;
+  @media (min-width: 768px) {
+    font-size: 6vw;
+  }
 }
 
 .heroFor {
-  font-size: 2vw;
+  font-size: 1rem;
   font-weight: normal;
   line-height: 3;
+  @media(min-width: 768px) {
+    font-size: 2vw;
+  }
 }
 
 .heroBirds {
-  letter-spacing: 3vw;
   line-height: 1.1;
-  font-size: 8vw;
-  margin-left: 3vw;
+  font-size: 4.2rem;
+  letter-spacing: 14px;
+  margin-left: 12px;
+  @media (min-width: 768px) {
+    letter-spacing: 3vw;
+    font-size: 8vw;
+    margin-left: 3vw;
+  }
 }
 
 .section {
-  padding: 0.75rem 3rem 3.6rem;
+  padding: 0.75rem 0 3.6rem;
   margin: 1rem auto;
   max-width: 1024px;
 }
 
 .sectionIntro {
-  font-size: 1.777rem;
+  font-size: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   margin-bottom: 0;
   padding-bottom: 0;
+  @media(min-width: 1024px) {
+    font-size: 1.777rem;
+  }
 }
 
 .header {
@@ -71,15 +87,25 @@
 
 .articleTeaserContainer {
   border: 1px solid gray;
-  padding: 10px;
   margin: 1.777rem 0;
+  padding: 10px 0;
+  @media (max-width: 768px) {
+    border-left: 0;
+    border-right: 0;
+  }
+  @media(min-width: 768px) {
+    padding: 10px;
+  }
 }
 
 .articleTeaser {
-  height: 260px;
+  height: 220px;
   width: auto;
   position: relative;
   border: 2px solid black;
+  @media(min-width: 768px) {
+    height: 260px;
+  }
 }
 
 .articleTeaserContents {
@@ -90,10 +116,17 @@
   bottom: 0;
   padding: 1rem 1.45rem;
   h1 {
-    font-size: 3.157rem;
+    font-size: $h3-size;
     margin: 0 0 0.2rem;
+    @media (min-width: 768px) {
+      font-size: $h2-size;
+    }
   }
   span {
     font-size: 1.333rem;
+    display: none;
+    @media(min-width: 768px) {
+      display: inline-block;
+    }
   }
 }

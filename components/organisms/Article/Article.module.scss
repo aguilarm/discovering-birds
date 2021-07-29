@@ -1,7 +1,7 @@
 @import 'lib/sass/variables';
 
 .container {
-  max-width: 1024px;
+  max-width: 1180px;
   margin: 0 1rem;
   @media(min-width: 768px) {
     margin: 0 auto;
@@ -29,11 +29,10 @@
 }
 
 .main {
-  max-width: 720px;
+  max-width: 760px;
   margin: 0 1rem 3rem;
   @media(min-width: 768px) {
     margin: 0 auto 5rem;
-    max-width: 720px;
   }
 }
 
