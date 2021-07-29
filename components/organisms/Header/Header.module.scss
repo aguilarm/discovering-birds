@@ -14,18 +14,25 @@
   line-height: 1;
   margin: 1.15rem auto 0.85rem;
   cursor: pointer;
-  width: 240px;
+  width: 208px;
+  text-align: center;
 }
 
-.discovering {
-  letter-spacing: -2px;
-  font-size: 2.4rem;
+.searching {
+  font-size: 2rem;
+  letter-spacing: 2px;
   line-height: 0.8;
+}
+
+.for {
+  margin-top: 0.5rem;
+  font-size: 1rem;
 }
 
 .birds {
   letter-spacing: 17px;
-  font-size: 3.75rem;
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .borderContainer {

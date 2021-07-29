@@ -7,7 +7,8 @@ const Header: React.FC = () => {
     <header className={styles.header}>
       <Link href={'/'}>
         <div className={styles.title}>
-          <div className={styles.discovering}>discovering</div>
+          <div className={styles.searching}>Searching</div>
+          <div className={styles.for}>for</div>
           <div className={styles.birds}>birds</div>
         </div>
       </Link>

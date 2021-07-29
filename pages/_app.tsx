@@ -7,7 +7,7 @@ import Head from 'next/head';
 const App: React.FC<AppProps> = ({ Component, pageProps }) => (
   <>
     <Head>
-      <title>Disocovering Birds</title>
+      <title>Searching for Birds</title>
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
         href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap"

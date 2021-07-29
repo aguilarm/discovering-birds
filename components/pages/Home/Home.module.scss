@@ -24,24 +24,29 @@
   text-align: center;
   top: 50%;
   transform: translateY(-50%);
+  color: white;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+  text-transform: uppercase;
 }
 
-.discovering {
+.heroSearching {
   color: white;
   letter-spacing: -2px;
-  font-size: 7vw;
   line-height: 0.8;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+  font-size: 6vw;
 }
 
-.birds {
-  letter-spacing: 17px;
-  font-size: 15vw;
-  color: white;
-  text-transform: uppercase;
+.heroFor {
+  font-size: 2vw;
+  font-weight: normal;
+  line-height: 3;
+}
+
+.heroBirds {
+  letter-spacing: 3vw;
   line-height: 1.1;
-  text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+  font-size: 8vw;
+  margin-left: 3vw;
 }
 
 .section {

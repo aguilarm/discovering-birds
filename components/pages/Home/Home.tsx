@@ -21,8 +21,9 @@ const Home: React.FC<HomeProps> = ({ mostRecentArticles, homepageCopy }) => (
           altText={'Red shouldered hawk'}
         />
         <div className={styles.heroText}>
-          <div className={styles.discovering}>Discovering</div>
-          <div className={styles.birds}>Birds</div>
+          <div className={styles.heroSearching}>Searching</div>
+          <div className={styles.heroFor}>for</div>
+          <div className={styles.heroBirds}>Birds</div>
         </div>
       </section>
       <section
