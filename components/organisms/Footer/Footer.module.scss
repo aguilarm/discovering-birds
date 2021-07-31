@@ -1,0 +1,44 @@
+@import 'lib/sass/variables';
+
+.footer {
+  width: 100%;
+  color: rgba(0,0,0,0.75);
+  border: 0 solid $color-border;
+  border-top-width: 2px;
+}
+
+.title {
+  font-family: $font-display;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 1.15rem auto 0.85rem;
+  cursor: pointer;
+  width: 208px;
+  text-align: center;
+}
+
+.searching {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  line-height: 0.8;
+}
+
+.for {
+  margin-top: 0.15rem;
+  font-size: 1rem;
+}
+
+.birds {
+  letter-spacing: 10px;
+  font-size: 1.5rem;
+  margin-left: 7px;
+  line-height: 1;
+}
+
+.borderContainer {
+  padding: 1rem 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}

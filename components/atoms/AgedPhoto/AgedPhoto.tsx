@@ -5,7 +5,7 @@ import classNames from 'classnames';
 
 interface Props {
   priority?: boolean;
-  imageSrc: string;
+  imageSrc?: string | StaticImageData;
   altText: string;
   className?: string;
   position?: string;
@@ -18,6 +18,20 @@ const AgedPhoto: React.FC<Props> = ({
   priority,
   position,
 }) => {
+  // Go a little nuts to get Typescript happy about statically imported images
+  const imageProps = {
+    className: styles.image,
+    priority: !!priority,
+    alt: altText,
+    layout: 'fill',
+    objectFit: 'cover',
+    placeholder: typeof imageSrc === 'string' ? 'empty' : 'blur',
+    objectPosition: position || 'center 55%',
+  };
+  const renderImage = (
+    // @ts-ignore
+    <Image src={imageSrc} {...imageProps} />
+  );
   return (
     <div className={classNames(styles.container, className)}>
       <div className={styles.overlay}>
@@ -30,17 +44,7 @@ const AgedPhoto: React.FC<Props> = ({
           objectPosition={'center center'}
         />
       </div>
-      <div className={styles.image}>
-        <Image
-          className={styles.image}
-          priority={!!priority}
-          src={imageSrc}
-          alt={altText}
-          layout={'fill'}
-          objectFit={'cover'}
-          objectPosition={position || 'center 55%'}
-        />
-      </div>
+      <div className={styles.image}>{renderImage}</div>
     </div>
   );
 };

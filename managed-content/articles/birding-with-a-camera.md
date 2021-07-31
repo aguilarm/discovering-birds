@@ -1,13 +1,12 @@
 ---
 title: "Birding with a Camera"
-subTitle: "Why you should consider a super-zoom bridge camera, and which one to pick up."
+subTitle: "Why you should consider a super-zoom bridge camera."
 date: "2021-06-28"
 heroImageSrc: "/assets/hero-images/mockingbird.jpg"
-heroImageAlt: "Northern Mockingbird on a cactus in south Texas"
+heroImageAlt: "Northern Mockingbird on a cactus in south Texas | Photo by searchingforbirds.com"
 ---
 
-When I was researching a camera to try bird photography, guides were all over the map. It was not clear if I could even
-reasonably start out below 5000 dollars. Would I regret buying a sub-2000 dollar rig because the photos would be so
+When I was researching a camera to try bird photography, guides were all over the map. It was not clear if I could even reasonably start out below 5000 dollars. Would I regret buying a sub-2000 dollar rig because the photos would be so
 obviously amateur?
 
 Super-zooms are a great choice for arguably *most* birders - especially new ones. I'll make an argument for and against them and then give you some recommendations on what to buy.
@@ -38,7 +37,7 @@ To get the really crisp, professional shots of birds perched nicely on a branch,
 So, I would advise you to get a full camera body for a few different reasons. If you are sure you want to get into professional photography, it's a good investment and probably better than a super-zoom due to the quality difference. Also, if you aren't very mobile or don't plan to hike, a nice tripod setup could be enjoyable. Finally, if the sky is the limit on your budget there are excellent medium size telephoto rigs to be had for a price. For further reading, check out this [a great article on
 B&H that discusses lenses in general](https://www.bhphotovideo.com/explora/photography/tips-and-solutions/guide-birding-long-lenses).
 
-However, in an effort to make birding as approachable as possible for everyone, I think the price alone of super-zooms is a game changer. As an added bonus, because of the price point, you can have a super-zoom for long hikes and pick up a bigger rig for calculated photography outings.
+However, in an effort to make birding as approachable as possible for everyone, I think the price alone is a game changer. Additionally, you can have a super-zoom for long hikes and pick up a bigger rig for calculated photography outings if you later choose to upgrade.
 
 ## Recommended Super-zoom Cameras
 
@@ -47,6 +46,8 @@ of these are great starter cameras for an aspiring birder. They retain value eve
 they're quite compact - you can take these anywhere without lugging your larger rig.
 
 #### Best Overall <br/> Cannon Powershot SX70 HS <br/> $600
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oIC5zTZL-1A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 This is an excellent combination of value and performance. At about 600 dollars, it fits in the middle of this set of
 devices. The 1365mm 35m equivalent zoom will reach birds in any reasonable situation.
@@ -58,12 +59,16 @@ This is my go-to starter camera. It's relatively small size make it great as a b
 
 #### Most Powerful <br/> Nikon Coolpix P950 <br/> $799.95
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ve4gbKIBFEE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 The P950 is the best super-zoom on the market, but also one of the most expensive. This is the newest in the Nikon P range, coming out after the P1000. At a lower price point, I think the P950 is a more realistic camera than the practically tech-demo P1000. A detachable lens with equivalent zoom to either may not even exist and if it did it would easily cost six figures!
 
 At 2000mm zoom, you are very unlikely to get in a situation where you miss a shot of a bird in the field. It's the largest camera of this set by a fair amount, but still considerably smaller
 than a full body + lens.
 
 ### Best Value <br/> Panasonic Lumix FZ80 <br /> $400
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8ENfdQvxJOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 This is a very capable camera especially at this price. I think the extra zoom and improved build quality
 of the SX70 is what sets the two apart, but if your primary consideration is cost then the FZ80 is a great choice.

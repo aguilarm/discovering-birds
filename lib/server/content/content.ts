@@ -1,7 +1,6 @@
 import path from 'path';
 import fs from 'fs';
 import matter from 'gray-matter';
-import marked from 'marked';
 import { MetaData } from 'lib/types';
 
 const ArticlesDirPath = path.join(process.cwd(), 'managed-content/articles');
@@ -42,12 +41,12 @@ export function parseManagedMdFile(fileName: string, subdirectory?: string) {
   }
 
   const fileContents = fs.readFileSync(absolutePath, 'utf8');
-  const { data, content: rawMarkdown } = matter(fileContents);
-  const htmlBody = marked(rawMarkdown);
+  const { data, content } = matter(fileContents);
   const metaData = data as MetaData;
+  const rawMarkdown = content;
   return {
     metaData,
-    htmlBody,
+    rawMarkdown,
   };
 }
 

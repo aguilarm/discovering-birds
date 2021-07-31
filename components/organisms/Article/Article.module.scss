@@ -43,3 +43,20 @@
   }
 }
 
+.main :global(.markdown-image) {
+  margin: 2rem -2rem;
+  color: #6a6a6a;
+  text-rendering: optimizeLegibility;
+  font-size: $small-size;
+  border-bottom: 1px solid $color-border;
+  @media(min-width: 1280px) {
+    margin: 2rem -120px;
+  }
+  img {
+    background-color: $color-image-placeholder;
+  }
+  figcaption {
+    padding: 0.65rem 0.65rem;
+  }
+}
+
