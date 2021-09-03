@@ -25,6 +25,7 @@ export function MarkdownRenderer(rawMarkdown: string) {
             component: MdImage,
             props: {
               className: 'foo',
+              lazyBoundary: '800px',
             },
           },
         },

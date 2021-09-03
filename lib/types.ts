@@ -3,6 +3,7 @@ export interface MetaData {
   subTitle?: string;
   date: string;
   path: string;
+  published: boolean;
   heroImageSrc: string;
   heroImageAlt: string;
 }

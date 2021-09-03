@@ -41,6 +41,7 @@ const Home: React.FC<HomeProps> = ({ mostRecentArticles, homepageCopyMd }) => (
                     className={styles.articleTeaserPhoto}
                     imageSrc={article.heroImageSrc}
                     altText={article.heroImageAlt}
+                    loadImmediately={true}
                   />
                   <div className={styles.articleTeaserContents}>
                     <h1>{article.title}</h1>

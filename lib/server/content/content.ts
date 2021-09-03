@@ -11,6 +11,10 @@ const allArticleFilenames = fs.readdirSync(ArticlesDirPath);
 export const allArticleSlugs = allArticleFilenames.map((filename) =>
   filename.replace('.md', ''),
 );
+
+// TODO - This will only check articles on startup, which is the only
+//   currently planned way for articles to be added (restarting a new instance)
+//   If I get fancier with live updates, will have to make this parse on read.
 export const allArticleMetadata = allArticleFilenames.map((filename) => {
   const fullPath = path.join(ArticlesDirPath, filename);
   const fileContents = fs.readFileSync(fullPath, 'utf-8');
@@ -56,6 +60,7 @@ export function getArticleBySlug(slug: string) {
 
 export function getMostRecentArticles(count: number) {
   return allArticleMetadata
+    .filter((article) => article.published)
     .sort((a, b) => {
       // @ts-ignore
       return new Date(a.date) - new Date(b.date);

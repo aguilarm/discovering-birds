@@ -2,6 +2,7 @@
 title: "Birding with a Camera"
 subTitle: "Why you should consider a super-zoom bridge camera."
 date: "2021-06-28"
+published: true
 heroImageSrc: "/assets/hero-images/mockingbird.jpg"
 heroImageAlt: "Northern Mockingbird on a cactus in south Texas | Photo by searchingforbirds.com"
 ---
