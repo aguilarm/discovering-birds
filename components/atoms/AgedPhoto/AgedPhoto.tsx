@@ -35,9 +35,7 @@ const AgedPhoto: React.FC<Props> = ({
   if (loadImmediately) {
     if (priority) {
       console.warn(
-        'Image ' +
-          imageSrc +
-          ' should not have priority and immediate load. Priority is sufficient',
+        `Image ${altText} should not have priority and immediate load. Priority is sufficient`,
       );
     } else {
       imageProps.loading = 'eager';
