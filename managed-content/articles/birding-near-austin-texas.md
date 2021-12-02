@@ -11,6 +11,13 @@ Central Texas is one of the country's best places to go birding. In the Spring a
 
 If you are planning a trip or have lived in Central Texas for a while and are interested in birding, here are a few places to find excellent birds.
 
+In this article, we'll cover these areas:  
+[Hornsby Bend](#hornsby-bend)  
+[Doeskin Ranch](#doeskin-ranch)  
+[Mill's Pond](#mills-pond)  
+[Pace Bend](#pace-bend)  
+[Saint Edwards Park](#saint-edwards-park)  
+
 ## Hornsby Bend
 
 ![Eared Grebe in pond at Hornsby Bend](/assets/birding-near-austin-texas/hornsby-bend.jpg "Eared Grebe in pond at Hornsby Bend | Image by searchingforbirds.com")
@@ -39,7 +46,7 @@ If you go to Hornsby Bend Bird Observatory via Google maps, you'll pass through 
 
 You can also enter the via Hornsby Bend River Trail Platt Lane Trailhead to hike trails near the river. There's a decent parking lot here and no sign-in booth but you will need to hike a bit more to see the ponds.
 
-## Balcones Canyonlands Doeskin Ranch
+## Doeskin Ranch
 
 ![Blue Grosbeak in grassland](/assets/birding-near-austin-texas/doeskin-ranch.jpg "Blue Grosbeak at Doeskin Ranch | Image by searchingforbirds.com")
 
