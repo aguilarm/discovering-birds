@@ -8,7 +8,10 @@ import React from 'react';
 
 export const getStaticProps: GetStaticProps<HomeProps> = () => {
   const mostRecentArticles = getMostRecentArticles(5);
-  const { rawMarkdown: homepageCopyMd } = parseManagedMdFile('home');
+  const { rawMarkdown: homepageCopyMd } = parseManagedMdFile(
+    'home.md',
+    'homepage',
+  );
   return {
     props: {
       mostRecentArticles,

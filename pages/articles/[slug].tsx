@@ -3,11 +3,11 @@ import React from 'react';
 import ArticlePage, {
   ArticlePageProps,
 } from 'components/pages/ArticlePage/ArticlePage';
-import { allArticleSlugs, getArticleBySlug } from 'lib/server/content/content';
+import { AllArticleSlugs, getArticleBySlug } from 'lib/server/content/content';
 
 export const getStaticPaths: GetStaticPaths = () => {
   return {
-    paths: allArticleSlugs.map((path) => ({ params: { slug: path } })),
+    paths: AllArticleSlugs.map((path) => ({ params: { slug: path } })),
     fallback: false,
   };
 };
@@ -22,7 +22,6 @@ export const getStaticProps: GetStaticProps<ArticlePageProps> = ({
   }
 
   const articleContents = getArticleBySlug(params.slug);
-
   if (!articleContents) {
     return {
       notFound: true,

@@ -3,47 +3,39 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import { MetaData } from 'lib/types';
 
-const ArticlesDirPath = path.join(process.cwd(), 'managed-content/articles');
+const ArticlesDir = path.join(process.cwd(), 'managed-content/articles');
 
-const allArticleFilenames = fs.readdirSync(ArticlesDirPath);
+const ArticlesDirContents = fs.readdirSync(ArticlesDir);
 
-// TODO - Ensure that these load one time only
-export const allArticleSlugs = allArticleFilenames.map((filename) =>
+export const AllArticleSlugs = ArticlesDirContents.map((filename) =>
   filename.replace('.md', ''),
 );
 
-// TODO - This will only check articles on startup, which is the only
-//   currently planned way for articles to be added (restarting a new instance)
-//   If I get fancier with live updates, will have to make this parse on read.
-export const allArticleMetadata = allArticleFilenames.map((filename) => {
-  const fullPath = path.join(ArticlesDirPath, filename);
-  const fileContents = fs.readFileSync(fullPath, 'utf-8');
+const ArticleMdFiles = ArticlesDirContents.map((item) => {
+  const fullItemPath = path.join(ArticlesDir, item);
+  // If this is a directory, metadata will come from ./index.md
+  return fs.lstatSync(fullItemPath).isDirectory()
+    ? path.join(fullItemPath, 'index.md')
+    : fullItemPath;
+});
+
+export const allArticleMetadata = ArticleMdFiles.map((file) => {
+  const fileContents = fs.readFileSync(file, 'utf-8');
   const { data } = matter(fileContents);
   const metaData = data as MetaData;
   return {
     ...metaData,
-    path: '/articles/' + filename.replace('.md', ''),
+    path: '/articles/' + path.basename(file, path.extname(file)),
   };
 });
 
-/**
- * Just get html parsed from md in a particular file
- * @param fileName
- * @param subdirectory
- */
-export function parseManagedMdFile(fileName: string, subdirectory?: string) {
-  // Filter out potentially undefined subdirectory
-  const pathSegments = [
-    process.cwd(),
-    'managed-content',
-    subdirectory,
-    `${fileName}.md`,
-  ].filter((segment) => segment);
-  const absolutePath = path.join(...pathSegments);
+function parseMdFile(absolutePath: string) {
   if (!fs.existsSync(absolutePath)) {
-    throw new Error('File not found at ' + absolutePath);
+    throw new Error('ParseMdFile: File not found at ' + absolutePath);
   }
-
+  if (fs.lstatSync(absolutePath).isDirectory()) {
+    throw new Error('ParseMdFile: Path is directory! ' + absolutePath);
+  }
   const fileContents = fs.readFileSync(absolutePath, 'utf8');
   const { data, content } = matter(fileContents);
   const metaData = data as MetaData;
@@ -54,8 +46,28 @@ export function parseManagedMdFile(fileName: string, subdirectory?: string) {
   };
 }
 
+/**
+ * Just get html parsed from md in a particular file
+ * @param fileName
+ * @param filePath
+ */
+export function parseManagedMdFile(fileName: string, filePath = './') {
+  // Filter out potentially undefined subdirectory
+  const pathSegments = [
+    process.cwd(),
+    'managed-content',
+    filePath,
+    fileName,
+  ].filter((segment) => segment);
+  const absolutePath = path.join(...pathSegments);
+  parseMdFile(absolutePath);
+}
+
 export function getArticleBySlug(slug: string) {
-  return parseManagedMdFile(slug, 'articles');
+  // TODO - Probably make a map of slug:file ?
+  const index = AllArticleSlugs.indexOf(slug);
+  const file = ArticleMdFiles[index];
+  return parseMdFile(file);
 }
 
 export function getMostRecentArticles(count: number) {
