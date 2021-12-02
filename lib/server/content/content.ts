@@ -60,7 +60,7 @@ export function parseManagedMdFile(fileName: string, filePath = './') {
     fileName,
   ].filter((segment) => segment);
   const absolutePath = path.join(...pathSegments);
-  parseMdFile(absolutePath);
+  return parseMdFile(absolutePath);
 }
 
 export function getArticleBySlug(slug: string) {
