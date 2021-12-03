@@ -32,6 +32,7 @@ const Home: React.FC<HomeProps> = ({ mostRecentArticles, homepageCopyMd }) => (
         {MarkdownRenderer(homepageCopyMd)}
       </section>
       <section className={styles.section}>
+        <h1>Articles</h1>
         {mostRecentArticles.map((article) => (
           <Link href={article.path} key={article.path}>
             <a>

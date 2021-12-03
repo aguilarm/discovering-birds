@@ -75,7 +75,7 @@ export function getMostRecentArticles(count: number) {
     .filter((article) => article.published)
     .sort((a, b) => {
       // @ts-ignore
-      return new Date(a.date) - new Date(b.date);
+      return new Date(b.date) - new Date(a.date);
     })
     .slice(0, count);
 }
