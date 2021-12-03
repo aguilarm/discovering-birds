@@ -22,6 +22,11 @@ export default class MyDocument extends Document {
           `,
             }}
           />
+          <link
+            rel={'shortcut icon'}
+            type={'image/jpg'}
+            href={'/favicon.jpg'}
+          />
         </Head>
         <body>
           <Main />
