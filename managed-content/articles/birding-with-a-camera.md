@@ -10,6 +10,8 @@ heroImageAlt: "Northern Mockingbird on a cactus in south Texas | Photo by search
 When I was researching a camera to try bird photography, guides were all over the map. It was not clear if I could even reasonably start out below 5000 dollars. Would I regret buying a sub-2000 dollar rig because the photos would be so
 obviously amateur?
 
+![Great Kiskadee](/assets/birding-with-a-camera/kiskadee.jpg "Example of a nice superzoom photo. Great Kiskadee in South Texas | Image by searchingforbirds.com")
+
 Super-zooms are a great choice for arguably *most* birders - especially new ones. I'll make an argument for and against them and then give you some recommendations on what to buy.
 
 ## Why Super-zoom Bridge Cameras Excel
@@ -20,6 +22,8 @@ Since you can take them anywhere without special planning, they're perfect for a
 
 #### Zoom
 First and definitely foremost for birding, super-zoom cameras have  incredible zoom. Any of these cameras have over 1000mm zoom lenses which is practically unrivaled at any price or size in detachable lenses.
+
+![Red shouldered Hawk at extreme zoom](/assets/birding-with-a-camera/high-zoom.jpg "This photo of a Red-shouldered Hawk was taken at extreme zoom from across a river - a distance of nearly 200 yards | Image by searchingforbirds.com")
 
 #### Size
 A bridge camera has a permanently attached lens which allows the camera to be significantly more compact. Furthermore, they have tiny sensors which increases the zoom power of small lenses. Most of these cameras can fit alongside your hiking gear with very little fuss, making it easy to get serendipitous shots while you're in the field.
@@ -39,6 +43,8 @@ So, I would advise you to get a full camera body for a few different reasons. If
 B&H that discusses lenses in general](https://www.bhphotovideo.com/explora/photography/tips-and-solutions/guide-birding-long-lenses).
 
 However, in an effort to make birding as approachable as possible for everyone, I think the price alone is a game changer. Additionally, you can have a super-zoom for long hikes and pick up a bigger rig for calculated photography outings if you later choose to upgrade.
+
+![Green Jay](/assets/birding-with-a-camera/green-jay.jpg "This photo of a Green Jay was taken relatively close-up from a bird blind. A full camera body may have produced a much crisper photo with better depth of field, but the superzoom certainly does not disappoint. | Image by searchingforbirds.com")
 
 ## Recommended Super-zoom Cameras
 
@@ -77,6 +83,8 @@ of the SX70 is what sets the two apart, but if your primary consideration is cos
 Some advantages the Lumix seems to have over the SX70 is slightly better low-light performance and a lot more AF points.
 
 It's great to have something at this price point that can make bird photography more accessible to almost everyone.
+
+![Purple Galinule](/assets/birding-with-a-camera/purple-galinule.jpg "Purple Galinule photographed from the other side of a medium sized pond. Superzooms make water birds a little more accessible. | Image by searchingforbirds.com")
 
 ## Where to go next
 
