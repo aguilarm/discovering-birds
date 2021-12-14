@@ -68,9 +68,7 @@
 
 .sectionIntro {
   font-size: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
   padding-bottom: 0;
   @media(min-width: 1024px) {
     font-size: 1.777rem;
@@ -128,5 +126,20 @@
     @media(min-width: 768px) {
       display: inline-block;
     }
+  }
+}
+
+.organizations {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1em 5%;
+  flex-wrap: wrap;
+  li {
+    flex: 1 0 40%;
+  }
+  h2 {
+    margin: 0.5em 0 1em 0;
   }
 }
