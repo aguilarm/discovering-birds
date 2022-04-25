@@ -1,6 +1,6 @@
 import styles from './AgedPhoto.module.scss';
 import React from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import classNames from 'classnames';
 
 interface Props {
