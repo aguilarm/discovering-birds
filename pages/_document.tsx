@@ -27,6 +27,19 @@ export default class MyDocument extends Document {
             type={'image/jpg'}
             href={'/favicon.jpg'}
           />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?&family=Tangerine:wght@700&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />
