@@ -15,6 +15,13 @@ const MdImage = (props) => {
   );
 };
 
+// Remove paragraphs from around images so we can add elements that shouldn't be in <p> tags below.
+const UnParagraphImages: React.FC = ({ children }) => {
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+  if (children[0]?.type?.name === 'MdImage') return <>{children}</>;
+  return <p>{children}</p>;
+};
+
 export function MarkdownRenderer(rawMarkdown: string) {
   // Inject NextJS Images into bodies
   return (
@@ -23,10 +30,9 @@ export function MarkdownRenderer(rawMarkdown: string) {
         overrides: {
           img: {
             component: MdImage,
-            props: {
-              className: 'foo',
-              lazyBoundary: '800px',
-            },
+          },
+          p: {
+            component: UnParagraphImages,
           },
         },
       }}
