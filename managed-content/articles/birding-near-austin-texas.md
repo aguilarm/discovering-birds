@@ -3,7 +3,7 @@ title: "Birding Near Austin Texas"
 subTitle: "Tips on birding hotspots deep in the heart of Texas."
 date: "2021-07-23"
 published: true
-heroImageSrc: "/assets/photos/common-yellowthroat.jpg"
+heroImageSrc: "/assets/hero-images/common-yellowthroat.jpg"
 heroImageAlt: "Common Yellowthroat in a sage bush in Central Texas"
 ---
 
