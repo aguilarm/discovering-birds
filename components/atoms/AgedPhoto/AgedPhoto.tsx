@@ -1,6 +1,6 @@
 import styles from './AgedPhoto.module.scss';
 import React from 'react';
-import Image, { StaticImageData } from 'next/image';
+import Image, { ImageProps, StaticImageData } from 'next/image';
 import classNames from 'classnames';
 
 interface Props {
@@ -20,14 +20,15 @@ const AgedPhoto: React.FC<Props> = ({
   loadImmediately,
   position,
 }) => {
-  // Go a little nuts to get Typescript happy about statically imported images
-  const imageProps = {
+  const imageProps: ImageProps = {
     className: styles.image,
     priority: !!priority,
     loading: undefined,
     alt: altText,
     layout: 'fill',
     objectFit: 'cover',
+    // Asserting string is untrue but this prevents an any lint error. Unclear root cause.
+    src: imageSrc as string,
     placeholder: typeof imageSrc === 'string' ? 'empty' : 'blur',
     objectPosition: position || 'center 55%',
   };
@@ -42,10 +43,7 @@ const AgedPhoto: React.FC<Props> = ({
     }
   }
 
-  const renderImage = (
-    // @ts-ignore
-    <Image src={imageSrc} {...imageProps} />
-  );
+  const renderImage = <Image alt={altText} {...imageProps} />;
   return (
     <div className={classNames(styles.container, className)}>
       <div className={styles.overlay}>

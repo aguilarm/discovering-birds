@@ -5,7 +5,7 @@ import Link from 'next/link';
 const Header: React.FC = () => {
   return (
     <header className={styles.header}>
-      <Link href={'/'}>
+      <Link href={'/'} passHref>
         <div className={styles.title}>
           <div className={styles.searching}>Searching</div>
           <div className={styles.for}>for</div>

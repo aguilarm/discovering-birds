@@ -1,5 +1,5 @@
 ---
-title: "Birding near Austin"
+title: "Birding Near Austin Texas"
 subTitle: "Tips on birding hotspots deep in the heart of Texas."
 date: "2021-07-23"
 published: true

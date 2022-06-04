@@ -16,7 +16,7 @@ Absolutely nothing will beat a good guided tour. Getting an experienced birder t
 
 These will usually require a bit of advance planning ahead to arrange and are much easier to do in birding-specific destinations like South Texas or Southeast Arizona. Keep an eye out and try to get one set up if you end up in a big birding spot!
 
-![Varied Thrush in Northern California](/assets/finding-birds-away-from-home/varied-thrush.jpg "Varied Thrush are a PNW specialty bird. | Image by searchingforbirds.com")
+![Varied Thrush in Northern California](/assets/finding-birds-away-from-home/varied-thrush.jpg "Varied Thrush are a west-coast specialty bird. | Image by searchingforbirds.com")
 
 ### Local Birders
 The best resource available to you is a local birder. Above all else, this is the easiest way to find interesting places to check out birds and get tips about rarities. I had great luck at tourist information centers - they're almost always staffed by a nice retiree that either birds themselves or knows someone who does. Park rangers or other park staff are also great resources. Especially on a meandering road trip, getting to a local as early as possible is the best way to get the most out of your time in an area. Zoos and aquariums are also good places to ask questions.

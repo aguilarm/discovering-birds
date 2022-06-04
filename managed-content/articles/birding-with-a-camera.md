@@ -29,20 +29,30 @@ First and definitely foremost for birding, super-zoom cameras have  incredible z
 A bridge camera has a permanently attached lens which allows the camera to be significantly more compact. Furthermore, they have tiny sensors which increases the zoom power of small lenses. Most of these cameras can fit alongside your hiking gear with very little fuss, making it easy to get serendipitous shots while you're in the field.
 
 #### Price
-Depending on your budget, this could be a deciding factor. A birding capable super-zoom will range from 300 to 1200 dollars brand new - not to mentioned used. A new rig that you would be happy birding with in the full camera body + lens world would generally *start* at 1200 and easily pass 2000, unless you go used, old, or cheap.
+Depending on your budget, this could be a deciding factor. A birding capable super-zoom will range from 300 to 1200 dollars brand new - not to mentioned used. A new rig that you would be happy birding with in the full camera body + lens world would generally *start* at 1200 and easily pass 2000.
 
 ## When to go for a Full Camera Body Instead
 
-In the field, it seems that the vast majority of bird photographers go with a full camera body and lens combo. It is far and away the most common advice if you look around for 'best birding camera.' This advice is certainly not wrong - super-zooms are not the *best* camera in terms of the photos you get.
+Almost universally, it seems, birders reach for full camera bodies and advise beginners to do so as well. Unless you are
+flush with disposable income, I generally disagree with that advice. However, budget aside, why would you skip super-zooms?
 
-Full camera bodies can get much more precise focus and markedly better photo quality in most cases than a super-zoom. The tradeoffs are size and budget. The full setup is going to be either more expensive and larger, much much more expensive and still slightly bigger, or in the same ballpark and not quite as powerful as you need for birds.
+Full camera bodies can get much more precise focus and markedly better photo quality in most cases than a super-zoom. The tradeoffs are size, zoom and budget.
 
-To get the really crisp, professional shots of birds perched nicely on a branch, you will almost definitely have to spend a lot of time in one spot behind a $2k+ huge lens. That is still definitely a great time and super rewarding, and I encourage you to go all in if that's what you're after!
+A much loved combo, the Nikon D500 with either a 300 or 200-500mm lens, will cost you at least $1500 used and approaching $3000 new. This combo 
+will perform very well on birds in trees near you, but will not capture birds across rivers or large open areas exceptionally well. Additionally,
+the lens alone weights nearly as much as an entire super-zoom camera.
 
-So, I would advise you to get a full camera body for a few different reasons. If you are sure you want to get into professional photography, it's a good investment and probably better than a super-zoom due to the quality difference. Also, if you aren't very mobile or don't plan to hike, a nice tripod setup could be enjoyable. Finally, if the sky is the limit on your budget there are excellent medium size telephoto rigs to be had for a price. For further reading, check out this [a great article on
-B&H that discusses lenses in general](https://www.bhphotovideo.com/explora/photography/tips-and-solutions/guide-birding-long-lenses).
+To get the equivalent zoom, you *could* [buy this monster lens](https://www.bhphotovideo.com/c/product/1691842-REG/canon_rf_1200mm_f_8_l.html) and
+enjoy crisp photos even in situations that normally require a spotting scope. You'll also need 20 thousand dollars.
 
-However, in an effort to make birding as approachable as possible for everyone, I think the price alone is a game changer. Additionally, you can have a super-zoom for long hikes and pick up a bigger rig for calculated photography outings if you later choose to upgrade.
+If you are not sensitive to the increased weight and bulk, full camera bodies will produce much more reliably high quality
+photos. Further, if you want to print photos on anything larger than a small notebook, you need to go with a full body.
+
+For further reading, check out this [excellent article on B&H that discusses lenses in general](https://www.bhphotovideo.com/explora/photography/tips-and-solutions/guide-birding-long-lenses).
+
+I think the vast majority of hobby birders are not going to print photos and, if anything, are going to post photos on 
+social media where super-zoom quality is still excellent. All too common are hobby birders that pick up a reasonably priced
+full body setup and can't manage to get any birds close enough to get nice shots.
 
 ![Green Jay](/assets/birding-with-a-camera/green-jay.jpg "This photo of a Green Jay was taken relatively close-up from a bird blind. A full camera body may have produced a much crisper photo with better depth of field, but the superzoom certainly does not disappoint. | Image by searchingforbirds.com")
 
