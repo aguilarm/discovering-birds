@@ -114,11 +114,7 @@
   bottom: 0;
   padding: 1rem 1.45rem;
   h1 {
-    font-size: $h3-size;
     margin: 0 0 0.2rem;
-    @media (min-width: 768px) {
-      font-size: $h2-size;
-    }
   }
   span {
     font-size: 1.333rem;

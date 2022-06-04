@@ -10,7 +10,10 @@ const MdImage = (props) => {
   return (
     <div className={'markdown-image'}>
       {ImageElement}
-      <figcaption dangerouslySetInnerHTML={{ __html: title }}></figcaption>
+      <figcaption
+        className={'text-small'}
+        dangerouslySetInnerHTML={{ __html: title }}
+      ></figcaption>
     </div>
   );
 };

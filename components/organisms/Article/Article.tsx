@@ -11,7 +11,9 @@ const Article: React.FC<ArticlePageProps> = ({
     <article className={styles.container}>
       <header className={styles.header}>
         <h1 className={styles.title}>{title}</h1>
-        {subTitle && <span className={styles.subTitle}>{subTitle}</span>}
+        {subTitle && (
+          <span className={`${styles.subTitle} text-3`}>{subTitle}</span>
+        )}
       </header>
       <main className={styles.main}>{MarkdownRenderer(rawMarkdown)}</main>
     </article>

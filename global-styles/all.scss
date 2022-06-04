@@ -22,6 +22,21 @@ a {
   box-sizing: border-box;
 }
 
+.markdown-image {
+  margin: 0 -2rem 1.4rem;
+  color: #6a6a6a;
+  text-rendering: optimizeLegibility;
+  border-bottom: 1px solid $color-border;
+  @media(min-width: 1280px) {
+    margin: 2rem -3rem 2rem -3rem;
+  }
+  img {
+    background-color: $color-image-placeholder;
+  }
+  figcaption {
+    padding: 0.65rem 0.65rem;
+  }
+}
 
 html {font-size: 100%;} /*16px*/
 
@@ -39,19 +54,37 @@ h1, h2, h3, h4, h5 {
   line-height: 1.2;
 }
 
-h1 {
+// Sizes grabbed from type-scale.com
+h1, .text-1 {
   margin-top: 0;
-  font-size: $h1-size;
+  font-size: 1.802rem;
 }
 
-h2 {font-size: $h2-size;}
+h2, .text-2 {font-size: 1.602rem;}
 
-h3 {font-size: $h3-size;}
+h3, .text-3 {font-size: 1.424rem;}
 
-h4 {font-size: $h4-size;}
+h4, .text-4 {font-size: 1.266rem;}
 
-h5 {font-size: $h5-size;}
+h5, .text-5 {font-size: 1.125rem;}
 
-small, .text_small {font-size: $small-size;}
+small, .text-small {font-size: 0.8rem;}
+
+@media (min-width:768px) {
+  h1, .text-1 {
+    margin-top: 0;
+    font-size: 3.052rem;
+  }
+
+  h2, .text-2 {font-size: 2.441rem;}
+
+  h3, .text-3 {font-size: 1.953rem;}
+
+  h4, .text-4 {font-size: 1.563rem;}
+
+  h5, .text-5 {font-size: 1.25rem;}
+
+  small, .text-small {font-size: 0.8rem;}
+}
 
 
