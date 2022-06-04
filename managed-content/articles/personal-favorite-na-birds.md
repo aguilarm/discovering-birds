@@ -61,7 +61,7 @@ the last few years. Hopefully this will inspire you to keep an eye out for birds
    This is the bird used on the cover of Wingspan, the bird board game. They are really exceptional birds with super long
    tails and neat peachy coloring. Another resident of the south-central US, they can be found around rivers and lakes
    and are especially common where the land opens to prairies.
-![Loggerhead Shrike](/assets/personal-favorite-na-birds/cedar-waxwing.jpg "Cedar Waxwing. | Image by searchingforbirds.com")
+![Loggerhead Shrike](/assets/personal-favorite-na-birds/loggerhead-shrike-2.jpg "Cedar Waxwing. | Image by searchingforbirds.com")
 <h2>10. Loggerhead Shrike</h2>
     Also known as the Butcherbird, these tiny birds are pretty metal. They hunt small insects, lizards, small mammals, and other birds
     and skewer their corpses on thorns around their home - using the thorns because they don't have the claws of larger
