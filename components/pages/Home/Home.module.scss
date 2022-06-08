@@ -61,9 +61,12 @@
 }
 
 .section {
-  padding: 0.75rem 0 3.6rem;
   margin: 1rem auto;
   max-width: 1024px;
+  padding: 0.75rem 1.5rem 3.6rem;
+  @media (min-width: 1024px) {
+    padding: 0.75rem 0 3.6rem;
+  }
 }
 
 .sectionIntro {
@@ -86,11 +89,7 @@
 .articleTeaserContainer {
   border: 1px solid gray;
   margin: 1.777rem 0;
-  padding: 10px 0;
-  @media (max-width: 768px) {
-    border-left: 0;
-    border-right: 0;
-  }
+  padding: 10px;
   @media(min-width: 768px) {
     padding: 10px;
   }
