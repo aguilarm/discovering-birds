@@ -25,6 +25,15 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
     <>
       <Head>
         <title>Searching for Birds</title>
+        <meta
+          name={'description'}
+          content={
+            'Discover the world of birds via advocacy, interesting facts, and tutorials.'
+          }
+        />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@searchin4birds" />
+        <meta name="twitter:title" content="Searching for Birds" />
       </Head>
       <Component {...pageProps} />
     </>

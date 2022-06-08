@@ -5,6 +5,7 @@ import Article from 'components/organisms/Article/Article';
 import { MetaData } from 'lib/types';
 import Footer from 'components/organisms/Footer/Footer';
 import Head from 'next/head';
+import heroImage from '../../../public/assets/hero-images/red-shouldered-hawk.jpg';
 
 export interface ArticlePageProps {
   metaData: MetaData;
@@ -20,6 +21,12 @@ const ArticlePage: React.FC<ArticlePageProps> = (props) => {
       <Head>
         <title>{title} | Searching for Birds</title>
         <meta name={'description'} content={subTitle} />
+        <meta
+          name={'twitter:image'}
+          content={`${
+            typeof window !== 'undefined' ? window.location.origin : ''
+          }${heroImageSrc}`}
+        />
       </Head>
       <Header />
       <Hero src={heroImageSrc} alt={heroImageAlt} />

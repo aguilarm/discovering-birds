@@ -7,6 +7,7 @@ import classnames from 'classnames';
 import heroImage from '../../../public/assets/hero-images/red-shouldered-hawk.jpg';
 import { MarkdownRenderer } from 'lib/shared/content/content';
 import Footer from 'components/organisms/Footer/Footer';
+import Head from 'next/head';
 
 export interface HomeProps {
   mostRecentArticles: MetaData[];
@@ -15,6 +16,14 @@ export interface HomeProps {
 
 const Home: React.FC<HomeProps> = ({ mostRecentArticles, homepageCopyMd }) => (
   <main className={styles.main}>
+    <Head>
+      <meta
+        name={'twitter:image'}
+        content={`${
+          typeof window !== 'undefined' ? window.location.origin : ''
+        }${heroImage.src}`}
+      />
+    </Head>
     <section className={styles.homeHero}>
       <AgedPhoto
         position={'center 42%'}
