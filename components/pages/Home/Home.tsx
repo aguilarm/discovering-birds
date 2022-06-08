@@ -6,6 +6,7 @@ import AgedPhoto from 'components/atoms/AgedPhoto/AgedPhoto';
 import classnames from 'classnames';
 import heroImage from '../../../public/assets/hero-images/red-shouldered-hawk.jpg';
 import { MarkdownRenderer } from 'lib/shared/content/content';
+import Footer from 'components/organisms/Footer/Footer';
 
 export interface HomeProps {
   mostRecentArticles: MetaData[];
@@ -108,6 +109,7 @@ const Home: React.FC<HomeProps> = ({ mostRecentArticles, homepageCopyMd }) => (
         </li>
       </ul>
     </section>
+    <Footer />
   </main>
 );
 

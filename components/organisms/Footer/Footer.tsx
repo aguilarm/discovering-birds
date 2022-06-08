@@ -12,6 +12,9 @@ const Footer: React.FC = () => {
           <div className={styles.birds}>birds</div>
         </div>
       </Link>
+      <a className={'text-small'} href={'https://twitter.com/searchin4birds'}>
+        twitter
+      </a>
     </footer>
   );
 };
