@@ -19,9 +19,7 @@ const Home: React.FC<HomeProps> = ({ mostRecentArticles, homepageCopyMd }) => (
     <Head>
       <meta
         name={'twitter:image'}
-        content={`${
-          typeof window !== 'undefined' ? window.location.origin : ''
-        }${heroImage.src}`}
+        content={`${process.env.NEXT_PUBLIC_HTTP_ORIGIN}${heroImage.src}`}
       />
     </Head>
     <section className={styles.homeHero}>
